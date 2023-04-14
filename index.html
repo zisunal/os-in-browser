@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Own OS in Browser</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="assets/images/web/icon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/d7d87efefa.js" crossorigin="anonymous"></script>
+    <!-- Vex JS Modal CSS -->
+    <link rel="stylesheet" href="assets/plugins/vex/css/vex-theme-os.css">
+</head>
+<body>
+    <!-- App container and bottom taskbar -->
+    <div class="br-os-container">
+        <div id="br-os-apps">
+
+        </div>
+        <div id="taskbar"></div>
+    </div>
+
+    <!-- App window -->
+    <div class="br-os-window" draggable="true">
+        <!-- Top window -->
+        <div class="window-bar">
+            <!-- Icon -->
+            <div class="brand"></div>
+            <!-- Maximize, cross etc buttons -->
+            <div class="buttons">
+                <!-- Maximize button -->
+                <button id="maximise">
+                    <i class="fa fa-window-maximize"></i>
+                </button>
+                <!-- Window size restore button -->
+                <button id="shorter">
+                    <i class="fa fa-window-restore"></i>
+                </button>
+                <!-- App close button -->
+                <button id="cross">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Main app -->
+        <div class="app" id="app-main">
+
+        </div>
+    </div>
+
+    <!-- Hide App -->
+    <div id="app-hide"></div>
+
+    <!-- Context menu -->
+    <nav id="os-ct-menu">
+        <uL>
+            <li><a href="javascript:;">Open</a></li>
+            <li><a href="javascript:;">Open as administrator</a></li>
+            <li><a href="javascript:;">Remove</a></li>
+            <li><a href="javascript:;">Properties</a></li>
+        </uL>
+    </nav>
+
+    <!-- Vex JS Modal -->
+    <script src="assets/plugins/vex/js/vex.combined.js"></script>
+    <script>
+        vex.defaultOptions.className = "vex-theme-os"
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
